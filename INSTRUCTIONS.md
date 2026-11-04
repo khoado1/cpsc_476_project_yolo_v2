@@ -91,6 +91,11 @@ Present the slides and include a screen demonstration of the ONNX-to-RKNN conver
 
 
 SETUP:
+
+python3 -m venv .venv
+
+python3 -m pip install -r requirements.txt
+
 setup_yolov8_rknn_ubuntu.sh
 
 cd ~/cpsc_476_project_yolo_v2

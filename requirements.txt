@@ -1,0 +1,8 @@
+# YOLOv8 / ONNX / RKNN Dependencies
+ultralytics==8.0.147
+numpy==1.23.5
+onnx==1.10.0
+onnxruntime==1.10.0
+opencv-python==4.8.1.78
+Pillow>=9.0,<11
+PyYAML>=6.0,<7
