@@ -45,3 +45,48 @@ Q. What should we include in our screen video demo?
 A. You need to at least show that you can do model conversion (from onnx to rknn). This proves that your group went through the rknn toolchain installation and usage. I encourage you to do object detection of a given photo on your laptop directly in the toolchain environment (my lecture mp4 has demonstrated it; you may need to download rnkk model zoo). Please try it (if it failed, that's fine - no deduction of grades). 
 
 
+GUIDE: 
+xx Review the GitHub repositories
+Understand YOLOv8, RKNN Toolkit2, RK3588, and the example project.
+
+
+[ ] Set up a Linux environment
+
+Use Ubuntu, either installed directly or in a compatible virtual environment.
+
+
+[ ] Download the open-source project
+
+Clone the YOLOv8 detection repository and inspect its instructions and example files.
+
+
+[ ] Install RKNN Toolkit2
+
+Set up Python, dependencies, and the RKNN model-conversion tools.
+
+
+[ ] Convert an ONNX model to RKNN
+
+Run the conversion and record your screen showing the commands, results, and generated .rknn file.
+
+
+[ ] Try object detection (optional)
+
+Use an ONNX model to detect objects in an image on your laptop. Your professor says failure is acceptable.
+
+
+[ ] Write the 2,000-word PDF report
+
+Explain the technologies, setup, experiments, results, group reflections, and references.
+
+
+[ ] Create the PowerPoint
+
+Summarize the important information from your report.
+
+
+[ ] Record a roughly 20-minute MP4
+
+Present the slides and include a screen demonstration of the ONNX-to-RKNN conversion.
+
+
