@@ -90,3 +90,45 @@ Summarize the important information from your report.
 Present the slides and include a screen demonstration of the ONNX-to-RKNN conversion.
 
 
+SETUP:
+setup_yolov8_rknn_ubuntu.sh
+
+cd ~/cpsc_476_project_yolo_v2
+source .venv/bin/activate
+
+python - <<'PY'
+import sys
+
+print("=== YOLOv8 / RKNN Environment Test ===")
+print("Python:", sys.version.split()[0])
+
+packages = [
+    ("numpy", "numpy"),
+    ("torch", "torch"),
+    ("onnx", "onnx"),
+    ("onnxruntime", "onnxruntime"),
+    ("ultralytics", "ultralytics"),
+    ("RKNN Toolkit2", "rknn.api"),
+]
+
+for name, module in packages:
+    try:
+        imported = __import__(module, fromlist=["RKNN"])
+        version = getattr(imported, "__version__", "Installed")
+        print(f"[PASS] {name}: {version}")
+    except Exception as e:
+        print(f"[FAIL] {name}: {e}")
+
+print("=== Test Complete ===")
+PY
+
+EXPECTED: 
+=== YOLOv8 / RKNN Environment Test ===
+Python: 3.8.10
+[PASS] numpy: 1.23.5
+[PASS] torch: 1.10.1+cu102
+[PASS] onnx: 1.10.0
+[PASS] onnxruntime: 1.10.0
+[PASS] ultralytics: 8.0.147
+[PASS] RKNN Toolkit2: Installed
+=== Test Complete ===
