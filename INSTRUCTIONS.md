@@ -50,27 +50,27 @@ xx Review the GitHub repositories
 Understand YOLOv8, RKNN Toolkit2, RK3588, and the example project.
 
 
-[ ] Set up a Linux environment
+[ x] Set up a Linux environment
 
 Use Ubuntu, either installed directly or in a compatible virtual environment.
 
 
-[ ] Download the open-source project
+[ x] Download the open-source project
 
 Clone the YOLOv8 detection repository and inspect its instructions and example files.
 
 
-[ ] Install RKNN Toolkit2
+[ x] Install RKNN Toolkit2
 
 Set up Python, dependencies, and the RKNN model-conversion tools.
 
 
-[ ] Convert an ONNX model to RKNN
+[ x] Convert an ONNX model to RKNN
 
 Run the conversion and record your screen showing the commands, results, and generated .rknn file.
 
 
-[ ] Try object detection (optional)
+[ x] Try object detection (optional)
 
 Use an ONNX model to detect objects in an image on your laptop. Your professor says failure is acceptable.
 
